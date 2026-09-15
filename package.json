@@ -1,0 +1,27 @@
+{
+  "name": "mini-to-base64",
+  "version": "0.0.1",
+  "description": "Fast Base64 encoder using native APIs.",
+  "author": "bddjr",
+  "license": "Unlicense",
+  "type": "module",
+  "main": "main.js",
+  "types": "main.d.ts",
+  "files": [
+    "main.js",
+    "main.d.ts"
+  ],
+  "scripts": {
+    "test": "node scripts/test.mjs",
+    "prepublishOnly": "pnpm test"
+  },
+  "keywords": [
+    "base64",
+    "mini",
+    "polyfill",
+    "front-end"
+  ],
+  "devDependencies": {
+    "@types/node": "^26.5.1"
+  }
+}
