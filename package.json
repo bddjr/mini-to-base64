@@ -1,15 +1,25 @@
 {
   "name": "mini-to-base64",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Fast Base64 encoder using native APIs.",
   "author": "bddjr",
   "license": "Unlicense",
   "type": "module",
-  "main": "main.js",
-  "types": "main.d.ts",
+  "main": "./main.js",
+  "types": "./main.d.ts",
+  "exports": {
+    ".": {
+      "types": "./main.d.ts",
+      "browser": "./browser.mjs",
+      "node": "./node.mjs",
+      "default": "./main.js"
+    }
+  },
   "files": [
     "main.js",
-    "main.d.ts"
+    "main.d.ts",
+    "browser.mjs",
+    "node.mjs"
   ],
   "repository": {
     "type": "git",
